@@ -1,8 +1,5 @@
-from typing import TYPE_CHECKING, Any
-
 from django.contrib import admin
 from .models import CraftingRecipe, CraftingIngredient, CraftingIngredientGroup, CraftingGroupOption
-from django.utils.safestring import mark_safe
 
 class CraftingIngredientInline(admin.TabularInline):
     model = CraftingIngredient

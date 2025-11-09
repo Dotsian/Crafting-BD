@@ -1,0 +1,24 @@
+[project]
+name = "bdcraft"
+version = "0.1.0"
+description = ""
+requires-python = ">=3.12"
+license = "MIT"
+dependencies = [
+    "discord.py>=2.5.0"
+]
+
+[tool.dexi]
+public = true
+ballsdex-version = ">=2.25.0"
+include-license = true
+
+[tool.dexi.package]
+source = "src/package"
+target = "crafting"
+exclude = []
+
+[tool.dexi.app]
+source = "src/app"
+target = "crafting"
+models = "models.py"
